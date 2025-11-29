@@ -7,8 +7,10 @@ const App = () => {
   return (
     <main>
       <Header />
-      <Banner />
-      <Category />
+      <section className="relative">
+        <Banner />
+        <Category />
+      </section>
     </main>
   )
 }
