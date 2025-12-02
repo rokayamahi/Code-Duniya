@@ -9,6 +9,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import type { ArrowPropsType } from "../types/ArrowPropsType";
+
 
 const Category = () => {
 
@@ -40,8 +42,8 @@ const Category = () => {
     },
   ]
 
-  function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+  function SampleNextArrow(props : ArrowPropsType) {
+  const {style, onClick } = props;
   return (
     <div
       className="top-1/2 translate-y-[-50%]"
@@ -51,8 +53,8 @@ const Category = () => {
   );
 }
 
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+function SamplePrevArrow(props : ArrowPropsType){
+  const {style, onClick } = props;
   return (
     <div
       className=" top-1/2 translate-y-[-50%]"

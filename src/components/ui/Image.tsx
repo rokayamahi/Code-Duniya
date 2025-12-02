@@ -1,9 +1,9 @@
 import type { ImgType } from "../types/ImgType"
 
 
-const Image = ({src, alt, className} : ImgType ) => {
+const Image = ({imageurl, alt, className} : ImgType ) => {
   return (
-    <img className={className} src={src} alt={alt} />
+    <img className={className} src={imageurl} alt={alt} />
   )
 }
 

@@ -1,5 +1,7 @@
 import Banner from "./components/banner/Banner";
 import Category from "./components/category/Category";
+import Course from "./components/courses/course";
+
 import Header from "./components/header/Header";
 
 const App = () => {
@@ -11,6 +13,7 @@ const App = () => {
         <Banner />
         <Category />
       </section>
+      <Course />
     </main>
   )
 }
